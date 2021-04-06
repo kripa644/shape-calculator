@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shape Calculator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <img src="./assests//header.png"/>
+            <div class="container">
+                <div class="description">
+                    <p class="heading">Welcome to Shape Calculator</p>
+                    <p class="subHeading">Shape Calculator is an interactive web application. To the right
+                        you will find the 3 step application. Follow the instructions in
+                        each step. Clicking cancel will take you back to step 1. Enjoy!
+                    </p>
+                    <div class="details">
+                        <p>A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia. It is a paradisematic country, in
+                            which roasted parts of sentences fly into your mouth.
+                        </p>
+                        <p>
+                            Even the all-powerful Pointing has no control about the blind
+                            texts it is an almost unorthographic life One day however a
+                            small line of blind text by the name of Lorem Ipsum decided to
+                            leave for the far World of Grammar. The Big Oxmox advised her
+                            not to do so, because there were thousands of bad Commas.
+                        </p>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="step" id="step">
+                        <p class="bodyHeading" id="bodyHeading">Step 1 : Select your shape</p>
+                        <p class="bodySubHeading" id="bodySubHeading"> Please select the shape that you would like to calculate the area of and press the button "Go to step 2"</p>
+                        <div class="options" id="options">
+                            <div class="option">
+                                <input type="radio" id="rectangle" name="shape" value="rectangle">
+                                <label for="rectangle">Rectangle</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="circle" name="shape" value="circle">
+                                <label for="circle">Circle</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="square" name="shape" value="square">
+                                <label for="square">Square</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="ellipse" name="shape" value="ellipse">
+                                <label for="ellipse">Ellipse</label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="submit" id="submit" onclick=gotoStep2()>Go to step 2</button>
+                            <span>or</span>
+                            <span  class="cancel" onclick="window.location.reload(true)">Cancel</span>
+                        </div>
+                    </div>
+                    <div class="step2" id="step2" style="display: none">
+                        <p class="bodyHeading">Step 2 : Insert your values</p>
+                        <div class="buttons">
+                            <button class="submit" id="submit" onclick=gotoStep3()>Go to step 3</button>
+                            <span>or</span>
+                            <span  class="cancel" onclick="window.location.reload(true)">Cancel</span>
+                        </div>
+                    </div>
+                    <div class="step3" id="step3" style="display: none">
+                        <p class="bodyHeading">Step 3 : Your results</p>
+                        <div class="buttons">
+                            <button class="submit" id="submit" onclick="window.location.reload(true)">Start over</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftBanner">
+                    <p>120 x 240 Ad</p>
+                    <p>(Vertical Banner)</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+    
+</html>
